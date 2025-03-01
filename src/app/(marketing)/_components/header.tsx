@@ -3,9 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Bell, ChevronDown, MessageSquare, Search } from "lucide-react";
 import React from "react";
 
-type Props = {};
+// type Props = {};
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <header className="bg-white  px-6 py-4 flex items-center justify-between ">
     <div className="relative">

@@ -129,13 +129,13 @@ const Sidebarlist = ({ links, title }: any) => {
   );
 };
 
-export const Logo = () => {
+const Logo = () => {
   const { open } = useSidebar();
   return (
     <h1 className={cn("font-bold", open ? "text-2xl" : "text-base")}>WeHR</h1>
   );
 };
-export const LogoIcon = () => {
+const LogoIcon = () => {
   return (
     <Link
       href="#"
