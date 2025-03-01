@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary">
+            <Link href="/" className="text-2xl font-bold text-[#FF5151]">
               WeHR
             </Link>
           </div>
@@ -37,7 +37,7 @@ export default function Header() {
             <Button variant="outline" className="hidden sm:inline-flex">
               Log in
             </Button>
-            <Button>Sign up</Button>
+            <Button className="bg-[#ff5151]">Sign up</Button>
           </div>
         </div>
       </div>

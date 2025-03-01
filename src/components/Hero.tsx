@@ -8,29 +8,29 @@ export default function Hero() {
   const router = useRouter();
   return (
     <div className="bg-background py-20 md:py-32 overflow-hidden relative">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-[#161E54]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#161E54] ">
             <motion.span
-              className="text-primary block mb-2"
+              className="text-[#161E54] block mb-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Simplify Your Workflow
+              Simplify Your Hiring 
             </motion.span>
             <motion.span
-              className="text-foreground"
+              className="text-[#161E54]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              with StreamLine
+              with <span className="text-[#FF5151]">WeHR</span>
             </motion.span>
           </h1>
           <motion.p
@@ -39,8 +39,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Boost productivity and streamline your business processes with our powerful SaaS platform. Designed for
-            teams of all sizes.
+            Elevate your HR game with real-time insights, agile scheduling, and smart talent management—unlock the full potential of your workforce.
           </motion.p>
           <motion.div
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
@@ -48,10 +47,10 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Button onClick={()=>router.push('/dashboard')} size="lg" className="w-full sm:w-auto cursor-pointer">
+            <Button onClick={()=>router.push('/dashboard')} size="lg" className="w-full sm:w-auto cursor-pointer bg-[#ff5151]">
               Get started
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto ">
               Learn more
             </Button>
           </motion.div>
@@ -61,7 +60,7 @@ export default function Hero() {
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute -top-1/2 -left-1/2 w-full h-full bg-primary/10 dark:bg-primary/20 rounded-full"
+          className="absolute -top-1/2 -left-1/2 w-full h-full bg-[#ff5151]/10 dark:bg-primary/20 rounded-full"
           animate={{
             scale: [1, 1.1, 1],
             rotate: [0, 90, 0],
@@ -85,7 +84,7 @@ export default function Hero() {
           }}
         />
         <motion.div
-          className="absolute top-1/4 left-1/4 w-12 h-12 bg-primary/20 dark:bg-primary/30 rounded-full"
+          className="absolute top-1/4 left-1/4 w-12 h-12 bg-[#ff5151]/20 dark:bg-primary/30 rounded-full"
           animate={{
             y: [0, -20, 0],
             x: [0, 20, 0],
