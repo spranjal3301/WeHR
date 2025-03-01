@@ -76,6 +76,9 @@ const links2 = [
 ];
 
 const Layout: NextPage<Props> = ({ children }) => {
+  const isTab = useIsTab();
+  console.log(isTab);
+  
   const [open, setOpen] = useState(true);
 
       
@@ -103,7 +106,7 @@ const Layout: NextPage<Props> = ({ children }) => {
         <div className="flex flex-1 flex-col bg-background">
           <Header/>
           <hr className="m-0 h-px w-full border-none bg-gradient-to-r from-neutral-200/0 via-neutral-200 to-neutral-200/0" />
-          <div className="p-2 md:p-10  dark:border-neutral-700 dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full overflow-y-scroll">
+          <div className="p-2 md:px-10  dark:border-neutral-700 dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full overflow-y-scroll">
             {children}
           </div>
 

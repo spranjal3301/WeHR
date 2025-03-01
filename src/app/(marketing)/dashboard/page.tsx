@@ -6,6 +6,7 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
+import Pin from "@/icons/pin";
 import {
   Bell,
   ChevronDown,
@@ -28,6 +29,7 @@ export default function Page() {
 
       <div className="grid grid-cols-10 gap-6 ">
         <div className="col-span-10 lg:col-span-6 flex flex-col gap-4">
+
           <div className="grid grid-row-3 md:grid-cols-3 gap-4">
             <Card className="bg-[#ffefe7] border-none">
               <CardHeader className="">
@@ -88,13 +90,13 @@ export default function Page() {
             {/* Total Employees */}
             <Card className="border-[#e0e0e0]">
               <CardHeader className="pb-2">
-                <h3 className="text-sm font-medium text-[#686868]">
+                <h3 className="text-base font-medium text-[#161E54]">
                   Total Employees
                 </h3>
               </CardHeader>
               <CardContent className="pb-2">
                 <div className="flex justify-between items-end">
-                  <p className="text-3xl font-bold">216</p>
+                  <p className="text-5xl font-semibold">216</p>
                   <div className="h-12 w-24 relative">
                     <svg viewBox="0 0 100 30" className="w-full h-full">
                       <path
@@ -121,13 +123,13 @@ export default function Page() {
             {/* Talent Request */}
             <Card className=" border-[#e0e0e0]">
               <CardHeader className="pb-2">
-                <h3 className="text-sm font-medium text-[#686868]">
+                <h3 className="text-base font-medium text-[#161E54]">
                   Talent Request
                 </h3>
               </CardHeader>
               <CardContent className="pb-2">
                 <div className="flex justify-between items-end">
-                  <p className="text-3xl font-bold">16</p>
+                  <p className="text-5xl font-semibold">16</p>
                   <div className="h-12 w-24 relative">
                     <svg viewBox="0 0 100 30" className="w-full h-full">
                       <path
@@ -157,7 +159,7 @@ export default function Page() {
             <Card className="border-[#e0e0e0]">
               <CardHeader className="flex flex-row items-center justify-between ">
                 <div>
-                  <h3 className="text-sm font-medium text-[#686868]">
+                  <h3 className="text-base font-medium text-[#161E54]">
                     Announcement
                   </h3>
                   <p className="text-xs text-[#b2b2b2]">Today, 13 Sep 2021</p>
@@ -174,7 +176,7 @@ export default function Page() {
                     </div>
                     <div className="flex space-x-2">
                       <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
-                        <Edit3 className="h-3 w-3 text-[#686868]" />
+                        <Pin/>
                       </Button>
                       <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
                         <MoreHorizontal className="h-3 w-3 text-[#686868]" />
@@ -182,7 +184,7 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  <div className="flex items-start ">
                     <div className="flex-1">
                       <p className="text-sm font-medium">
                         Meeting HR Department
@@ -193,7 +195,7 @@ export default function Page() {
                     </div>
                     <div className="flex space-x-2">
                       <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
-                        <Edit3 className="h-3 w-3 text-[#686868]" />
+                         <Pin/>
                       </Button>
                       <Button variant="ghost" size="sm" className="h-6 w-6 p-0">
                         <MoreHorizontal className="h-3 w-3 text-[#686868]" />
@@ -223,7 +225,7 @@ export default function Page() {
                 <div className="mt-4 text-center">
                   <Button
                     variant="outline"
-                    className="text-[#ff5151] border-[#ff5151] hover:bg-[#ff5151]/10 text-xs"
+                    className="text-[#ff5151] border-[#ff5151] hover:bg-[#ff5151]/10 text-xs cursor-pointer"
                   >
                     See All Announcement
                   </Button>
@@ -248,7 +250,7 @@ export default function Page() {
               </p>
 
               <p className="text-xs mb-4">Today you makes 12 Activity</p>
-              <Button className="bg-[#ff5151] hover:bg-[#ff5151]/90 text-white text-xs py-1 px-3 rounded-md w-full">
+              <Button className="bg-[#ff5151] cursor-pointer hover:bg-[#ff5151]/90 text-white text-xs py-1 px-3 rounded-md w-full">
                 See All Activity
               </Button>
             </CardContent>
@@ -258,7 +260,7 @@ export default function Page() {
           <Card className=" border-[#e0e0e0]">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <div>
-                <h3 className="text-sm font-medium text-[#686868]">
+                <h3 className="text-base font-medium text-[#161E54]">
                   Upcoming Schedule
                 </h3>
                 <p className="text-xs text-[#b2b2b2]">Today, 13 Sep 2021</p>
