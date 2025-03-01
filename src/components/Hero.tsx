@@ -2,8 +2,10 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
+import { useRouter } from "next/navigation"
 
 export default function Hero() {
+  const router = useRouter();
   return (
     <div className="bg-background py-20 md:py-32 overflow-hidden relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -46,7 +48,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Button size="lg" className="w-full sm:w-auto">
+            <Button onClick={()=>router.push('/dashboard')} size="lg" className="w-full sm:w-auto cursor-pointer">
               Get started
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">

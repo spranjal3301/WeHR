@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-primary">
-              StreamLine
+              WeHR
             </Link>
           </div>
           <nav className="hidden md:flex space-x-10">
@@ -33,7 +33,7 @@ export default function Header() {
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <Button variant="outline" className="hidden sm:inline-flex">
               Log in
             </Button>
